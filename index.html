@@ -1,1 +1,83 @@
-asdfasd
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>untitled</title>
+	<style type="text/css">
+		/* reset */
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, font, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+			background: transparent;
+		}
+		body {
+			line-height: 1;
+		}
+		img.bg {
+			/* Set rules to fill background */
+			min-height: 100%;
+			min-width: 1024px;
+
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+
+			/* Set up positioning */
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index:100;
+		}
+
+		@media screen and (max-width: 1024px) { /* Specific to this particular image */
+			img.bg {
+				left: 50%;
+				margin-left: -512px;   /* 50% */
+			}
+		}
+		
+		img.logo {
+			position:fixed;
+			width:273px;
+			height:255px;
+			bottom:50px;
+			left:20%;
+			z-index:200;
+		}
+		ul {
+			list-style:none;
+			position:fixed;
+			height:80px;
+			top:40px;
+			left:20%;
+			z-index:200;			
+		}
+		ul li { position:relative; float:left; margin-right: 10px; }
+		ul li a img { width:80px; height:80px; }								
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="https://www.facebook.com/thepsydeprojects"><img src="images/facebook-logo.png"/></a></li>
+		<li><a href="https://twitter.com/PsydeProjects/"><img src="images/twitter.gif"/></a></li>
+		<li><a href="http://soundcloud.com/thepsydeprojects"><img src="images/soundcloud.png"/></a></li>
+		<li><a href="http://itunes.apple.com/au/artist/the-psyde-projects/id437202384"><img src="images/itunes.png"/></a></li>
+		<li><a href="http://www.youtube.com/user/ThePsydeProjects"><img src="images/youtube.png"/></a></li>
+		<li><a href="mailto:thepsydeprojects@gmail.com"><img src="images/gmail.png"/></a></li>						
+	</ul>	
+	<img src="images/psydees2.gif" class="bg" />
+	<img src="images/tb.png" class="logo" />
+</body>
+</html>
